@@ -2,6 +2,8 @@ package it.cybsec.domain;
 
 public class B extends A {
 
+	private A a = new A();
+	
 	public int getAttributo2_B() {
 		return attributo2;
 	}
@@ -9,7 +11,7 @@ public class B extends A {
 		this.attributo2 = attributo2;
 	}
 	
-//	public int getAttributo32_B() {
+//	public int getAttributo3_B() {
 //		return attributo3;
 //	}
 //	public void setAttributo3_B(int attributo3) {
@@ -29,13 +31,14 @@ public class B extends A {
 	}
 	
 	public String func2() {
+		a.attributoPackage = 0;
 	  	return "" + this.attributoPackage;
 	}
 	
 		 
-	   public int funziona() {
-	 	  return this.attributo2;
-	   }
+   public int funziona() {
+ 	  return this.attributo2;
+   }
 	
 	
 	

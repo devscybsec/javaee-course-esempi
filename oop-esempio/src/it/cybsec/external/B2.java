@@ -8,4 +8,8 @@ public class B2 extends A {
 		return this.attributo2;
 	}
 	
+//	public int function3() {
+//		return this.attributoPackage;
+//	}
+	
 }

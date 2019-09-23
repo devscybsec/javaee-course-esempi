@@ -20,4 +20,9 @@ public class C extends B {
 		return "Sono un oggetto di classe C";
 	}
 	
+	public String func2() {
+		// a.attributoPackage = 0;
+	  	return "" + this.attributoPackage;
+	}
+	
 }
