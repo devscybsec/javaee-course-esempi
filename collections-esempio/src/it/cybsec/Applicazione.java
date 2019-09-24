@@ -6,7 +6,11 @@ public class Applicazione {
 
 	static int[] array;
 	static int[][] matrix; 
+
+	static Collection<String> collection;
+	
 	static List<String> studenti; 
+	
 	static ArrayList<String> studentiArray;
 	static LinkedList<String> studentiLinked;
 	static Vector<String> studentiVector;
@@ -19,16 +23,17 @@ public class Applicazione {
 			array[i] = 0;
 		}
 		
-		matrix = new int[10][10];
+//		matrix = new int[10][10];
+		matrix = new int[10][];
 		for (int i = 0; i < matrix.length; i++) {
-			//matrix[i] = new int[10];
+			matrix[i] = new int[10];
 			for (int j = 0; j < matrix[i].length; j++) {
 				matrix[i][j] = i + j;
 			}
 		}
-		System.out.println();
 		
 		studenti = new ArrayList<String>();
+		
 		studentiArray = new ArrayList<String>();
 		studentiLinked = new LinkedList<String>();
 		studentiVector = new Vector<String>();
@@ -45,6 +50,7 @@ public class Applicazione {
 			System.out.println(studenti.get(i));
 		}
 		System.out.println();
+		
 		for (String el: studenti) {
 			System.out.println(el);
 		}
@@ -68,7 +74,7 @@ public class Applicazione {
 		studentiStack.addAll(studenti);
 		
 		studentiLinked.addFirst("Mirko");
-		studentiLinked.addFirst("Marco");
+		studentiLinked.addLast("Marco");
 		
 //		Mostrare alcune esempi con:
 //			- studentiLinked
