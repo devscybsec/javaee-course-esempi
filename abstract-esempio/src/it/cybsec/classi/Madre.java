@@ -1,6 +1,12 @@
 package it.cybsec.classi;
 
 public abstract class Madre {
+	
+	public static int A = 105;
+	public static void printCiao() {
+		System.out.println("Ciao!");
+	}
+	
 	private int x;
 	private int sonoBello;
 	
